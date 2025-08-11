@@ -146,6 +146,7 @@ Utilized MySQL for data extraction and calculation of key metrics such as Total 
 <img width="1133" height="526" alt="2025-08-06 (6)" src="https://github.com/user-attachments/assets/3f76a6c4-c5b2-4801-96cb-4acbbe7585fa" />
 
 <img width="1129" height="533" alt="2025-08-06 (7)" src="https://github.com/user-attachments/assets/286fa654-93ae-4aff-84c2-faf4ec545760" />
+
 ## Tools, Software, and Libraries
 - MySQL Workbench 8.0 CE
   - for data analysis and storage
