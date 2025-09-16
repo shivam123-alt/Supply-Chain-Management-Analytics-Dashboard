@@ -20,7 +20,7 @@ Utilized MySQL for data extraction and calculation of key metrics such as Total 
 
 <img width="564" height="243" alt="2025-08-06 (13)" src="https://github.com/user-attachments/assets/3e4d6a01-b8ad-4187-89fd-016637971fa7" />
 
-<img width="370" height="275" alt="2025-08-06 (14)" src="https://github.com/user-attachments/assets/15e32376-e1a0-4777-8afe-cc1ae61e53ab" 
+<img width="370" height="275" alt="2025-08-06 (14)" src="https://github.com/user-attachments/assets/15e32376-e1a0-4777-8afe-cc1ae61e53ab"/>
 
 <img width="806" height="645" alt="2025-08-06 (15)" src="https://github.com/user-attachments/assets/d0ca7012-f5f5-4397-bece-38e30e7dd132" />
 
