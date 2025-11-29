@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Supply Chain Management — Interactive Dashboard</title>
+  <meta name="description" content="Interactive page to host the Supply Chain Management Analytics Dashboard (Tableau embed) and links to the project repo." />
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --muted:#94a3b8; --accent:#06b6d4; --glass: rgba(255,255,255,0.04);
+      --radius:14px; --maxw:1150px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;color:#e6eef8;background:linear-gradient(180deg,#071427 0%, #071827 100%);}
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px;max-width:1200px;margin:18px auto;color:var(--muted)}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700;color:#002133}
+    h1{margin:0;font-size:18px}
+    nav a{color:var(--muted);text-decoration:none;margin-left:12px;padding:8px;border-radius:8px}
+    nav a.button{background:var(--glass);border:1px solid rgba(255,255,255,0.03)}
+
+    main{max-width:var(--maxw);margin:18px auto;padding:18px}
+    .grid{display:grid;grid-template-columns:1fr;gap:18px}
+    @media(min-width:880px){.grid{grid-template-columns:1fr 320px}}
+
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.03);padding:16px;border-radius:var(--radius);box-shadow: 0 6px 18px rgba(2,6,23,0.6)}
+    .viz-wrap{min-height:520px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+    .controls{display:flex;gap:8px;flex-wrap:wrap}
+    .btn{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:8px 12px;border-radius:10px;color:var(--muted);cursor:pointer}
+    .btn.primary{border-color:rgba(6,182,212,0.25);background:linear-gradient(90deg, rgba(6,182,212,0.06), rgba(124,58,237,0.04));color:var(--accent)}
+    .muted{color:var(--muted);font-size:14px}
+    .repo-link{display:inline-flex;gap:8px;align-items:center}
+
+    footer{max-width:var(--maxw);margin:20px auto;color:var(--muted);font-size:13px;padding:8px}
+
+    /* small helper for fullscreen container */
+    .fullscreen { position: fixed !important; top: 0; left: 0; width: 100% !important; height: 100% !important; z-index: 99999; padding: 20px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo">SC</div>
+      <div>
+        <h1>Supply Chain Management Analytics</h1>
+        <div class="muted">Interactive Dashboard — Tableau embed + project repo</div>
+      </div>
+    </div>
+    <nav>
+      <a class="button" href="https://github.com/shivam123-alt/Supply-Chain-Management-Analytics-Dashboard" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+      <a class="button" href="#deploy" title="Deployment notes">Deploy</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="grid">
+      <section class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+          <div>
+            <strong>Interactive Tableau Dashboard</strong>
+            <div class="muted">Embedded below — use the toolbar to interact with filters, download images, etc.</div>
+          </div>
+          <div class="controls">
+            <button class="btn" id="toggle-theme">Toggle Theme</button>
+            <button class="btn primary" id="fs">Fullscreen Viz</button>
+          </div>
+        </div>
+
+        <div class="viz-wrap card" id="vizCard">
+
+          <!-- BEGIN: Tableau embed (provided) -->
+<div class='tableauPlaceholder' id='viz1764404036698' style='position: relative'><noscript><a href='#'><img alt='Home ' src='https://public.tableau.com/static/images/su/supply_17544153935600/Home/1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='supply_17544153935600%2FHome' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https://public.tableau.com/static/images/su/supply_17544153935600/Home/1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>
+                <script type='text/javascript'>
+                    var divElement = document.getElementById('viz1764404036698');
+                    var vizElement = divElement.getElementsByTagName('object')[0];
+                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='1150px';vizElement.style.width='100%';vizElement.style.minHeight='487px';vizElement.style.maxHeight='587px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='1150px';vizElement.style.width='100%';vizElement.style.minHeight='487px';vizElement.style.maxHeight='587px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='2177px';}
+                     var scriptElement = document.createElement('script');
+                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                </script>
+          <!-- END: Tableau embed -->
+
+        </div>
+
+        <div style="margin-top:12px;display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+          <a class="btn" href="https://public.tableau.com/app/profile/" target="_blank" rel="noopener">Open in Tableau Public</a>
+          <a class="btn" href="https://github.com/shivam123-alt/Supply-Chain-Management-Analytics-Dashboard" target="_blank" rel="noopener">Source Code</a>
+          <div class="muted">Tip: use the toolbar inside the viz to apply filters or export images/data.</div>
+        </div>
+      </section>
+
+      <aside class="card">
+        <h3 style="margin-top:0">Deployment & Notes</h3>
+        <ol style="padding-left:18px;color:var(--muted)">
+          <li id="deploy">Quick deploy options: GitHub Pages (static), Netlify, or Vercel. This HTML is static — drop in root or serve via those platforms.</li>
+          <li>To host: add this file as <code>index.html</code> in your repo and enable GitHub Pages (branch: main / docs/)</li>
+          <li>Make sure the Tableau viz is public (it is) so it embeds correctly. If you change viz id, replace the embed code.</li>
+          <li>Customization ideas: add project README, screenshots, or multiple viz tabs by duplicating the tableauPlaceholder blocks.</li>
+        </ol>
+
+        <h4 style="margin-bottom:6px">Project Repo</h4>
+        <div class="repo-link">
+          <a class="btn" href="https://github.com/shivam123-alt/Supply-Chain-Management-Analytics-Dashboard" target="_blank">Open repository</a>
+        </div>
+      </aside>
+    </div>
+
+  </main>
+
+  <footer>
+    Built for deployment — supply chain analytics. If you want a version with separate CSS/JS files or a React/Vite starter, tell me and I'll generate them.
+  </footer>
+
+  <script>
+    // Simple helpers
+    const fsBtn = document.getElementById('fs');
+    const vizCard = document.getElementById('vizCard');
+    let isFullscreen = false;
+    fsBtn.addEventListener('click', ()=>{
+      if(!isFullscreen){
+        vizCard.classList.add('fullscreen');
+        document.body.style.overflow='hidden';
+        fsBtn.textContent='Exit Fullscreen';
+      } else {
+        vizCard.classList.remove('fullscreen');
+        document.body.style.overflow='auto';
+        fsBtn.textContent='Fullscreen Viz';
+      }
+      isFullscreen = !isFullscreen;
+    });
+
+    // Minimal theme toggle (keeps the Tableau iframe functioning)
+    const themeBtn = document.getElementById('toggle-theme');
+    themeBtn.addEventListener('click', ()=>{
+      if(document.documentElement.hasAttribute('data-light')){
+        document.documentElement.removeAttribute('data-light');
+      } else {
+        document.documentElement.setAttribute('data-light','1');
+      }
+      // This simple toggle only changes background for demo; you can expand to full theme styles.
+      document.body.style.background = document.documentElement.hasAttribute('data-light') ? 'linear-gradient(180deg,#f7fbff,#eef7ff)' : 'linear-gradient(180deg,#071427,#071827)';
+    });
+  </script>
+</body>
+</html>
