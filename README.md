@@ -157,3 +157,6 @@ Utilized MySQL for data extraction and calculation of key metrics such as Total 
 
 ## Reference
 - No references used
+
+## Deployment Link
+- https://supply-chain-management-analytics-d.vercel.app/
